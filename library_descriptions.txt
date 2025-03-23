@@ -1,0 +1,39 @@
+# Descriptions des bibliothèques
+
+1. **tensorflow==2.12.0**: Une bibliothèque open-source pour le calcul numérique et l'apprentissage automatique, principalement utilisée pour construire et entraîner des modèles de réseaux de neurones.
+
+2. **pandas**: Une bibliothèque pour la manipulation et l'analyse de données, offrant des structures de données flexibles et des outils pour travailler avec des données étiquetées.
+
+3. **dvc**: Data Version Control, un outil de gestion de versions pour les projets de science des données, permettant de suivre les modifications des données et des modèles.
+
+4. **mlflow==2.2.2**: Une plateforme pour gérer le cycle de vie des modèles d'apprentissage automatique, y compris le suivi des expériences, la gestion des modèles et le déploiement.
+
+5. **notebook**: Un environnement interactif pour créer et partager des documents contenant du code, des visualisations et du texte narratif, souvent utilisé avec Jupyter.
+
+6. **numpy**: Une bibliothèque pour le calcul scientifique en Python, fournissant un support pour les tableaux multidimensionnels et des fonctions mathématiques de haut niveau.
+
+7. **matplotlib**: Une bibliothèque de traçage pour créer des visualisations statiques, animées et interactives en Python.
+
+8. **seaborn**: Une bibliothèque de visualisation de données basée sur Matplotlib, offrant une interface de haut niveau pour dessiner des graphiques statistiques attrayants.
+
+9. **python-box==6.0.2**: Une bibliothèque qui permet de travailler avec des dictionnaires Python comme des objets, facilitant l'accès et la manipulation des données.
+
+10. **pyYAML**: Une bibliothèque pour lire et écrire des fichiers YAML, un format de sérialisation de données lisible par l'homme.
+
+11. **tqdm**: Une bibliothèque pour afficher des barres de progression dans les boucles, facilitant le suivi de l'avancement des tâches longues.
+
+12. **ensure==1.0.2**: Une bibliothèque pour effectuer des vérifications de type et des assertions dans le code Python.
+
+13. **joblib**: Une bibliothèque pour la parallélisation et la persistance des objets Python, souvent utilisée pour le calcul scientifique.
+
+14. **types-pyYAML**: Fournit des annotations de type pour la bibliothèque pyYAML, améliorant l'intégration avec les outils de vérification de type.
+
+15. **scipy**: Une bibliothèque pour le calcul scientifique et technique, construite sur NumPy, offrant des algorithmes et des fonctions pour l'optimisation, l'intégration, l'interpolation, etc.
+
+16. **Flask**: Un micro-framework pour le développement d'applications web en Python, permettant de créer des applications web légères et extensibles.
+
+17. **Flask-Cors**: Une extension pour Flask qui permet de gérer les requêtes Cross-Origin Resource Sharing (CORS), facilitant les interactions entre différents domaines.
+
+18. **gdown**: Une bibliothèque pour télécharger des fichiers depuis Google Drive, facilitant l'accès aux données stockées sur cette plateforme.
+
+19. **-e .**: Indique que le projet actuel doit être installé en mode "editable", permettant de modifier le code source sans avoir à réinstaller le package.
