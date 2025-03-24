@@ -8,6 +8,7 @@ src/CnnClassifier/constats/__init__.py
 src/CnnClassifier/entity/__init__.py
 src/CnnClassifier/pipeline/__init__.py
 src/CnnClassifier/utils/__init__.py
+src/CnnClassifier/utils/common.py
 src/cnnClassifier.egg-info/PKG-INFO
 src/cnnClassifier.egg-info/SOURCES.txt
 src/cnnClassifier.egg-info/dependency_links.txt
