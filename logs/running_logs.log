@@ -5,3 +5,190 @@
 [2025-03-24 11:53:33,241: INFO: common: yaml file: params.yaml loaded successfully]
 [2025-03-24 11:54:16,030: INFO: common: yaml file: config\config.yaml loaded successfully]
 [2025-03-24 11:54:16,032: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-03-24 12:32:04,805: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-03-24 12:32:04,813: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-03-24 13:02:51,855: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-03-24 13:02:51,865: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-03-24 13:10:34,678: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-03-24 13:10:34,689: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-03-24 13:11:08,162: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-03-24 13:11:08,164: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-03-24 13:26:33,406: INFO: main: Welcome to our log]
+[2025-03-24 15:19:26,320: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-03-24 15:19:26,335: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-03-24 15:26:02,746: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-03-24 15:26:02,756: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-03-24 15:26:33,439: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-03-24 15:26:33,441: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-03-24 15:29:42,171: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-03-24 15:29:42,174: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-03-24 15:29:42,176: INFO: common: created directory at: artifacts]
+[2025-03-24 15:29:42,179: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-03-24 15:29:42,181: INFO: 986331348: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-03-24 15:29:46,126: INFO: 986331348: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-03-24 15:57:51,317: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-03-24 15:57:51,317: ERROR: main: Return value of <function read_yaml at 0x000002B43419CDC0> of type <class 'NoneType'> does not match annotation type <class 'box.config_box.ConfigBox'>]
+Traceback (most recent call last):
+  File "C:\Users\bayir\Documents\Kidney_Disease_Detection\main.py", line 9, in <module>
+    data_ingestion.main()
+  File "c:\users\bayir\documents\kidney_disease_detection\src\CnnClassifier\pipeline\stage_01_data_ingestion.py", line 13, in main
+    config = ConfigurationManager()
+  File "c:\users\bayir\documents\kidney_disease_detection\src\CnnClassifier\config\configuration.py", line 15, in __init__
+    self.config = read_yaml(config_filepath)
+  File "C:\Users\bayir\anaconda3\envs\kideny\lib\site-packages\ensure\main.py", line 875, in __call__
+    raise EnsureError(msg.format(f=self.f, t=self.return_templ, valt=type(return_val)))
+ensure.main.EnsureError: Return value of <function read_yaml at 0x000002B43419CDC0> of type <class 'NoneType'> does not match annotation type <class 'box.config_box.ConfigBox'>
+[2025-03-24 16:01:33,040: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-03-24 16:01:33,050: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-03-24 16:01:33,055: INFO: common: created directory at: artifacts]
+[2025-03-24 16:01:33,058: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-03-24 16:01:33,061: INFO: 986331348: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-03-24 16:01:39,164: INFO: 986331348: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-03-24 16:02:52,800: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-03-24 16:02:52,816: ERROR: main: Return value of <function read_yaml at 0x000002CB7E5ECC10> of type <class 'NoneType'> does not match annotation type <class 'box.config_box.ConfigBox'>]
+Traceback (most recent call last):
+  File "C:\Users\bayir\Documents\Kidney_Disease_Detection\main.py", line 9, in <module>
+    data_ingestion.main()
+  File "c:\users\bayir\documents\kidney_disease_detection\src\CnnClassifier\pipeline\stage_01_data_ingestion.py", line 13, in main
+    config = ConfigurationManager()
+  File "c:\users\bayir\documents\kidney_disease_detection\src\CnnClassifier\config\configuration.py", line 15, in __init__
+    self.config = read_yaml(config_filepath)
+  File "C:\Users\bayir\anaconda3\envs\kideny\lib\site-packages\ensure\main.py", line 875, in __call__
+    raise EnsureError(msg.format(f=self.f, t=self.return_templ, valt=type(return_val)))
+ensure.main.EnsureError: Return value of <function read_yaml at 0x000002CB7E5ECC10> of type <class 'NoneType'> does not match annotation type <class 'box.config_box.ConfigBox'>
+[2025-03-24 16:04:26,421: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-03-24 16:04:26,421: ERROR: main: Return value of <function read_yaml at 0x000002462FA8CDC0> of type <class 'NoneType'> does not match annotation type <class 'box.config_box.ConfigBox'>]
+Traceback (most recent call last):
+  File "C:\Users\bayir\Documents\Kidney_Disease_Detection\main.py", line 9, in <module>
+    data_ingestion.main()
+  File "c:\users\bayir\documents\kidney_disease_detection\src\CnnClassifier\pipeline\stage_01_data_ingestion.py", line 13, in main
+    config = ConfigurationManager()
+  File "c:\users\bayir\documents\kidney_disease_detection\src\CnnClassifier\config\configuration.py", line 15, in __init__
+    self.config = read_yaml(config_filepath)
+  File "C:\Users\bayir\anaconda3\envs\kideny\lib\site-packages\ensure\main.py", line 875, in __call__
+    raise EnsureError(msg.format(f=self.f, t=self.return_templ, valt=type(return_val)))
+ensure.main.EnsureError: Return value of <function read_yaml at 0x000002462FA8CDC0> of type <class 'NoneType'> does not match annotation type <class 'box.config_box.ConfigBox'>
+[2025-03-24 16:04:54,188: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-03-24 16:04:54,188: ERROR: main: Return value of <function read_yaml at 0x00000221724CCB80> of type <class 'NoneType'> does not match annotation type <class 'box.config_box.ConfigBox'>]
+Traceback (most recent call last):
+  File "C:\Users\bayir\Documents\Kidney_Disease_Detection\main.py", line 11, in <module>
+    data_ingestion.main()
+  File "c:\users\bayir\documents\kidney_disease_detection\src\CnnClassifier\pipeline\stage_01_data_ingestion.py", line 13, in main
+    config = ConfigurationManager()
+  File "c:\users\bayir\documents\kidney_disease_detection\src\CnnClassifier\config\configuration.py", line 15, in __init__
+    self.config = read_yaml(config_filepath)
+  File "C:\Users\bayir\anaconda3\envs\kideny\lib\site-packages\ensure\main.py", line 875, in __call__
+    raise EnsureError(msg.format(f=self.f, t=self.return_templ, valt=type(return_val)))
+ensure.main.EnsureError: Return value of <function read_yaml at 0x00000221724CCB80> of type <class 'NoneType'> does not match annotation type <class 'box.config_box.ConfigBox'>
+[2025-03-24 16:06:19,127: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-03-24 16:06:19,129: ERROR: main: Return value of <function read_yaml at 0x00000233752DCB80> of type <class 'NoneType'> does not match annotation type <class 'box.config_box.ConfigBox'>]
+Traceback (most recent call last):
+  File "C:\Users\bayir\Documents\Kidney_Disease_Detection\main.py", line 11, in <module>
+    data_ingestion.main()
+  File "c:\users\bayir\documents\kidney_disease_detection\src\CnnClassifier\pipeline\stage_01_data_ingestion.py", line 13, in main
+    config = ConfigurationManager()
+  File "c:\users\bayir\documents\kidney_disease_detection\src\CnnClassifier\config\configuration.py", line 15, in __init__
+    self.config = read_yaml(config_filepath)
+  File "C:\Users\bayir\anaconda3\envs\kideny\lib\site-packages\ensure\main.py", line 875, in __call__
+    raise EnsureError(msg.format(f=self.f, t=self.return_templ, valt=type(return_val)))
+ensure.main.EnsureError: Return value of <function read_yaml at 0x00000233752DCB80> of type <class 'NoneType'> does not match annotation type <class 'box.config_box.ConfigBox'>
+[2025-03-24 16:06:59,049: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-03-24 16:06:59,049: ERROR: main: Return value of <function read_yaml at 0x0000022561E208B0> of type <class 'NoneType'> does not match annotation type <class 'box.box.Box'>]
+Traceback (most recent call last):
+  File "C:\Users\bayir\Documents\Kidney_Disease_Detection\main.py", line 11, in <module>
+    data_ingestion.main()
+  File "c:\users\bayir\documents\kidney_disease_detection\src\CnnClassifier\pipeline\stage_01_data_ingestion.py", line 13, in main
+    config = ConfigurationManager()
+  File "c:\users\bayir\documents\kidney_disease_detection\src\CnnClassifier\config\configuration.py", line 15, in __init__
+    self.config = read_yaml(config_filepath)
+  File "C:\Users\bayir\anaconda3\envs\kideny\lib\site-packages\ensure\main.py", line 875, in __call__
+    raise EnsureError(msg.format(f=self.f, t=self.return_templ, valt=type(return_val)))
+ensure.main.EnsureError: Return value of <function read_yaml at 0x0000022561E208B0> of type <class 'NoneType'> does not match annotation type <class 'box.box.Box'>
+[2025-03-24 16:17:16,028: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-03-24 16:17:16,044: INFO: common: created directory at: artifacts]
+[2025-03-24 16:17:16,046: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-03-24 16:17:16,047: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-03-24 16:17:21,979: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-03-24 16:17:26,718: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-03-24 16:17:48,198: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-03-24 16:17:48,202: INFO: common: created directory at: artifacts]
+[2025-03-24 16:17:48,203: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-03-24 16:17:48,204: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-03-24 16:17:54,248: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-03-24 16:18:00,265: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-03-25 07:55:04,765: INFO: common: created directory at: artifacts]
+[2025-03-25 07:55:04,771: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-03-25 07:56:38,098: INFO: common: created directory at: artifacts]
+[2025-03-25 07:56:38,102: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-03-25 07:56:43,932: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-03-25 07:57:43,814: INFO: common: created directory at: artifacts]
+[2025-03-25 07:57:43,817: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-03-25 07:57:44,318: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-03-25 08:15:33,457: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-03-25 08:15:33,457: INFO: common: created directory at: artifacts]
+[2025-03-25 08:15:33,457: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-03-25 08:15:33,457: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-03-25 08:15:38,934: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-03-25 08:15:43,521: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-03-25 08:15:43,521: INFO: main: *******************]
+[2025-03-25 08:15:43,521: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2025-03-25 08:15:43,521: ERROR: main: name 'PrepareBaseModelTrainingPipeline' is not defined]
+Traceback (most recent call last):
+  File "C:\Users\bayir\Documents\Kidney_Disease_Detection\main.py", line 22, in <module>
+    prepare_base_model = PrepareBaseModelTrainingPipeline()
+NameError: name 'PrepareBaseModelTrainingPipeline' is not defined
+[2025-03-25 08:16:52,705: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-03-25 08:16:52,705: INFO: common: created directory at: artifacts]
+[2025-03-25 08:16:52,705: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-03-25 08:16:52,714: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-03-25 08:16:58,523: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-03-25 08:17:03,124: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-03-25 08:17:03,124: INFO: main: *******************]
+[2025-03-25 08:17:03,124: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2025-03-25 08:17:03,124: ERROR: main: name 'PrepareBaseModelTrainingPipeline' is not defined]
+Traceback (most recent call last):
+  File "C:\Users\bayir\Documents\Kidney_Disease_Detection\main.py", line 22, in <module>
+    prepare_base_model = PrepareBaseModelTrainingPipeline()
+NameError: name 'PrepareBaseModelTrainingPipeline' is not defined
+[2025-03-25 08:19:50,455: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-03-25 08:19:50,460: INFO: common: created directory at: artifacts]
+[2025-03-25 08:19:50,461: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-03-25 08:19:50,461: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-03-25 08:19:56,858: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-03-25 08:20:02,719: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-03-25 08:20:02,719: INFO: main: *******************]
+[2025-03-25 08:20:02,719: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2025-03-25 08:20:02,732: INFO: common: created directory at: artifacts]
+[2025-03-25 08:20:02,732: ERROR: main: 'ConfigurationManager' object has no attribute 'get_prepare_base_model_config']
+Traceback (most recent call last):
+  File "C:\Users\bayir\Documents\Kidney_Disease_Detection\main.py", line 23, in <module>
+    prepare_base_model.main()
+  File "c:\users\bayir\documents\kidney_disease_detection\src\CnnClassifier\pipeline\stage_02_prepare_base_model.py", line 15, in main
+    prepare_base_model_config = config.get_prepare_base_model_config()
+AttributeError: 'ConfigurationManager' object has no attribute 'get_prepare_base_model_config'
+[2025-03-25 08:22:38,218: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-03-25 08:22:38,218: INFO: common: created directory at: artifacts]
+[2025-03-25 08:22:38,218: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-03-25 08:22:38,218: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-03-25 08:22:44,761: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-03-25 08:22:49,031: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-03-25 08:22:49,031: INFO: main: *******************]
+[2025-03-25 08:22:49,031: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2025-03-25 08:22:49,031: INFO: common: created directory at: artifacts]
+[2025-03-25 08:22:49,031: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-03-25 08:22:52,719: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-03-25 08:22:53,020: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]

@@ -3,12 +3,14 @@ import setuptools
 with open("README.md", "r", encoding="utf-8") as f:
     long_description = f.read()
 
-__version__="0.0.0"
 
-REPO_NAME = "Kidney_Disease_Detection"
-AUTHOR_USER_NAME = "ridabayi"
+__version__ = "0.0.0"
+
+REPO_NAME = "Kidney-Disease-Classification-Deep-Learning-Project"
+AUTHOR_USER_NAME = "krishnaik06"
 SRC_REPO = "cnnClassifier"
-AUTHOR_EMAIL = "bayi.rida@gmail.com"
+AUTHOR_EMAIL = "entbappy73@gmail.com"
+
 
 setuptools.setup(
     name=SRC_REPO,

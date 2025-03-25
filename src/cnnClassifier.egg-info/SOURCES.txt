@@ -4,7 +4,7 @@ src/CnnClassifier/__init__.py
 src/CnnClassifier/components/__init__.py
 src/CnnClassifier/config/__init__.py
 src/CnnClassifier/config/configuration.py
-src/CnnClassifier/constats/__init__.py
+src/CnnClassifier/constants/__init__.py
 src/CnnClassifier/entity/__init__.py
 src/CnnClassifier/pipeline/__init__.py
 src/CnnClassifier/utils/__init__.py
