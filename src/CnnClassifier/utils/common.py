@@ -16,13 +16,13 @@ def read_yaml(path_to_yaml: Path) -> ConfigBox:
     """Reads a YAML file and returns a Box object containing the config."""
     try:
         with open(path_to_yaml) as yaml_file:
-            conetnt = yaml.safe_load(yaml_file)  # Load YAML content as a dictionary
+            content = yaml.safe_load(yaml_file)
             logger.info(f"yaml file: {path_to_yaml} loaded successfully")
-            return ConfigBox(conetnt)  # Convert dictionary to Box object (allows dot-notation access)
+            return ConfigBox(content)
     except BoxValueError:
-        raise ValueError("Yaml file is empty")
+        raise ValueError("yaml file is empty")
     except Exception as e:
-        raise e  # Raise any other unexpected errors
+        raise e
 
 
 @ensure_annotations
