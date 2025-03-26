@@ -5,7 +5,7 @@ from CnnClassifier import logger
 import json
 import joblib
 from ensure import ensure_annotations
-from box import Box
+from box import ConfigBox
 from pathlib import Path
 from typing import Any
 import base64
@@ -13,13 +13,13 @@ import base64
 
 
 @ensure_annotations
-def read_yaml(path_to_yaml: Path) -> Box:
+def read_yaml(path_to_yaml: Path) -> ConfigBox:
     try:
         with open(path_to_yaml, 'r') as yaml_file:
             content = yaml.safe_load(yaml_file)
             if content is None:
                 raise ValueError(f"YAML file at {path_to_yaml} is empty!")
-            return Box(content, default_box=True)  # ✅ Fix pour Box v2.x
+            return ConfigBox(content, default_box=True) 
     except Exception as e:
         raise e
 
@@ -58,7 +58,7 @@ def save_json(path: Path, data: dict):
 
 
 @ensure_annotations
-def load_json(path: Path) -> Box:
+def load_json(path: Path) -> ConfigBox:
     """load json files data
 
     Args:
@@ -71,7 +71,7 @@ def load_json(path: Path) -> Box:
         content = json.load(f)
 
     logger.info(f"json file loaded succesfully from: {path}")
-    return Box(content)
+    return ConfigBox(content)
 
 
 @ensure_annotations
