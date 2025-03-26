@@ -412,3 +412,37 @@ x==========x]
 [2025-03-26 09:01:03,452: INFO: common: json file saved at: scores.json]
 [2025-03-26 09:01:06,653: WARNING: save: Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 13). These functions will not be directly callable after loading.]
 [2025-03-26 09:01:07,612: INFO: builder_impl: Assets written to: C:\Users\bayir\AppData\Local\Temp\tmpdyg43bia\model\data\model\assets]
+[2025-03-26 10:26:41,659: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-03-26 10:26:41,667: INFO: common: created directory at: artifacts]
+[2025-03-26 10:26:41,668: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-03-26 10:26:41,669: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-03-26 10:26:46,620: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-03-26 10:26:53,214: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-03-26 10:29:09,841: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-03-26 10:29:09,846: INFO: common: created directory at: artifacts]
+[2025-03-26 10:29:09,846: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-03-26 10:29:09,847: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-03-26 10:29:13,467: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-03-26 10:29:15,685: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-03-26 10:30:59,846: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-03-26 10:30:59,851: INFO: common: created directory at: artifacts]
+[2025-03-26 10:30:59,851: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-03-26 10:30:59,852: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-03-26 10:31:06,139: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-03-26 10:32:17,962: ERROR: stage_01_data_ingestion: [Errno 13] Permission denied: 'artifacts\\data_ingestion\\kidney-ct-scan-image\\Tumor\\Tumor- (998).jpg']
+Traceback (most recent call last):
+  File "C:\Users\bayir\Documents\Kidney_Disease_Detection\src\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 25, in <module>
+    obj.main()
+  File "C:\Users\bayir\Documents\Kidney_Disease_Detection\src\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 17, in main
+    data_ingestion.extract_zip_file()
+  File "c:\users\bayir\documents\kidney_disease_detection\src\CnnClassifier\components\data_ingestion.py", line 46, in extract_zip_file
+    zip_ref.extractall(unzip_path)
+  File "C:\Users\bayir\anaconda3\envs\kideny\lib\zipfile.py", line 1660, in extractall
+    self._extract_member(zipinfo, path, pwd)
+  File "C:\Users\bayir\anaconda3\envs\kideny\lib\zipfile.py", line 1714, in _extract_member
+    open(targetpath, "wb") as target:
+PermissionError: [Errno 13] Permission denied: 'artifacts\\data_ingestion\\kidney-ct-scan-image\\Tumor\\Tumor- (998).jpg'
