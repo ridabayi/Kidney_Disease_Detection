@@ -239,3 +239,176 @@ x==========x]
 [2025-03-26 07:15:51,259: INFO: main: >>>>>> stage Training completed <<<<<<
 
 x==========x]
+[2025-03-26 08:13:02,572: INFO: common: created directory at: artifacts]
+[2025-03-26 08:13:22,333: INFO: common: json file saved at: scores.json]
+[2025-03-26 08:16:53,171: INFO: common: created directory at: artifacts]
+[2025-03-26 08:16:55,346: INFO: common: json file saved at: scores.json]
+[2025-03-26 08:18:09,566: INFO: common: created directory at: artifacts]
+[2025-03-26 08:18:11,737: INFO: common: json file saved at: scores.json]
+[2025-03-26 08:18:13,796: WARNING: save: Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 13). These functions will not be directly callable after loading.]
+[2025-03-26 08:18:15,635: INFO: builder_impl: Assets written to: C:\Users\bayir\AppData\Local\Temp\tmptqlyb0lk\model\data\model\assets]
+[2025-03-26 08:46:43,481: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-03-26 08:46:43,491: INFO: common: created directory at: artifacts]
+[2025-03-26 08:46:43,492: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-03-26 08:46:43,493: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-03-26 08:46:47,442: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-03-26 08:47:17,798: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-03-26 08:47:17,805: INFO: common: created directory at: artifacts]
+[2025-03-26 08:47:17,806: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-03-26 08:47:17,807: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-03-26 08:47:24,141: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-03-26 08:47:30,764: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-03-26 08:47:30,764: INFO: main: *******************]
+[2025-03-26 08:47:30,764: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2025-03-26 08:47:30,764: INFO: common: created directory at: artifacts]
+[2025-03-26 08:47:30,764: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-03-26 08:47:34,576: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-03-26 08:47:35,260: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2025-03-26 08:47:35,260: INFO: main: *******************]
+[2025-03-26 08:47:35,260: INFO: main: >>>>>> stage Training started <<<<<<]
+[2025-03-26 08:47:35,265: INFO: common: created directory at: artifacts]
+[2025-03-26 08:47:35,265: INFO: common: created directory at: artifacts\training]
+[2025-03-26 08:47:59,973: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2025-03-26 08:47:59,973: INFO: main: *******************]
+[2025-03-26 08:47:59,973: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2025-03-26 08:47:59,978: INFO: common: created directory at: artifacts]
+[2025-03-26 08:48:08,418: INFO: common: json file saved at: scores.json]
+[2025-03-26 08:48:08,420: INFO: common: json file saved at: scores.json]
+[2025-03-26 08:48:08,420: INFO: main: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
+[2025-03-26 08:48:41,209: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-03-26 08:48:41,220: INFO: common: created directory at: artifacts]
+[2025-03-26 08:48:41,220: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-03-26 08:48:41,222: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-03-26 08:48:46,378: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-03-26 08:48:53,309: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-03-26 08:48:53,309: INFO: main: *******************]
+[2025-03-26 08:48:53,309: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2025-03-26 08:48:53,318: INFO: common: created directory at: artifacts]
+[2025-03-26 08:48:53,318: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-03-26 08:48:55,938: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-03-26 08:48:56,444: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2025-03-26 08:48:56,445: INFO: main: *******************]
+[2025-03-26 08:48:56,445: INFO: main: >>>>>> stage Training started <<<<<<]
+[2025-03-26 08:48:56,449: INFO: common: created directory at: artifacts]
+[2025-03-26 08:48:56,449: INFO: common: created directory at: artifacts\training]
+[2025-03-26 08:49:29,488: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2025-03-26 08:49:29,489: INFO: main: *******************]
+[2025-03-26 08:49:29,489: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2025-03-26 08:49:29,495: INFO: common: created directory at: artifacts]
+[2025-03-26 08:49:37,328: INFO: common: json file saved at: scores.json]
+[2025-03-26 08:49:37,330: INFO: common: json file saved at: scores.json]
+[2025-03-26 08:49:37,331: INFO: main: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
+[2025-03-26 08:50:05,735: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-03-26 08:50:05,743: INFO: common: created directory at: artifacts]
+[2025-03-26 08:50:05,743: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-03-26 08:50:05,743: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-03-26 08:50:11,022: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-03-26 08:50:15,827: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-03-26 08:50:15,827: INFO: main: *******************]
+[2025-03-26 08:50:15,827: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2025-03-26 08:50:15,827: INFO: common: created directory at: artifacts]
+[2025-03-26 08:50:15,827: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-03-26 08:50:18,343: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-03-26 08:50:18,343: ERROR: main: [Errno 22] Unable to synchronously create file (unable to open file: name = 'artifacts\prepare_base_model\base_model.h5', errno = 22, error message = 'Invalid argument', flags = 13, o_flags = 302)]
+Traceback (most recent call last):
+  File "C:\Users\bayir\Documents\Kidney_Disease_Detection\main.py", line 24, in <module>
+    prepare_base_model.main()
+  File "c:\users\bayir\documents\kidney_disease_detection\src\CnnClassifier\pipeline\stage_02_prepare_base_model.py", line 17, in main
+    prepare_base_model.get_base_model()
+  File "c:\users\bayir\documents\kidney_disease_detection\src\CnnClassifier\components\prepare_base_model.py", line 18, in get_base_model
+    self.save_model(path = self.config.base_model_path, model = self.model)
+  File "c:\users\bayir\documents\kidney_disease_detection\src\CnnClassifier\components\prepare_base_model.py", line 53, in save_model
+    model.save(path)
+  File "C:\Users\bayir\anaconda3\envs\kideny\lib\site-packages\keras\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\bayir\anaconda3\envs\kideny\lib\site-packages\h5py\_hl\files.py", line 564, in __init__
+    fid = make_fid(name, mode, userblock_size, fapl, fcpl, swmr=swmr)
+  File "C:\Users\bayir\anaconda3\envs\kideny\lib\site-packages\h5py\_hl\files.py", line 244, in make_fid
+    fid = h5f.create(name, h5f.ACC_TRUNC, fapl=fapl, fcpl=fcpl)
+  File "h5py\\_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py\\_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py\\h5f.pyx", line 122, in h5py.h5f.create
+OSError: [Errno 22] Unable to synchronously create file (unable to open file: name = 'artifacts\prepare_base_model\base_model.h5', errno = 22, error message = 'Invalid argument', flags = 13, o_flags = 302)
+[2025-03-26 08:56:07,974: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-03-26 08:56:07,983: INFO: common: created directory at: artifacts]
+[2025-03-26 08:56:07,983: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-03-26 08:56:07,983: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-03-26 08:56:14,335: ERROR: main: [Errno 22] Invalid argument: 'artifacts/data_ingestion/data.zip']
+Traceback (most recent call last):
+  File "C:\Users\bayir\anaconda3\envs\kideny\lib\shutil.py", line 816, in move
+    os.rename(src, real_dst)
+FileExistsError: [WinError 183] Impossible de créer un fichier déjà existant: 'artifacts/data_ingestion\\data.zipc35in15t.part' -> 'artifacts/data_ingestion/data.zip'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\bayir\Documents\Kidney_Disease_Detection\main.py", line 12, in <module>
+    data_ingestion.main()
+  File "c:\users\bayir\documents\kidney_disease_detection\src\CnnClassifier\pipeline\stage_01_data_ingestion.py", line 16, in main
+    data_ingestion.download_file()
+  File "c:\users\bayir\documents\kidney_disease_detection\src\CnnClassifier\components\data_ingestion.py", line 33, in download_file
+    raise e
+  File "c:\users\bayir\documents\kidney_disease_detection\src\CnnClassifier\components\data_ingestion.py", line 28, in download_file
+    gdown.download(prefix+file_id,zip_download_dir)
+  File "C:\Users\bayir\anaconda3\envs\kideny\lib\site-packages\gdown\download.py", line 381, in download
+    shutil.move(tmp_file, output)
+  File "C:\Users\bayir\anaconda3\envs\kideny\lib\shutil.py", line 836, in move
+    copy_function(src, real_dst)
+  File "C:\Users\bayir\anaconda3\envs\kideny\lib\shutil.py", line 434, in copy2
+    copyfile(src, dst, follow_symlinks=follow_symlinks)
+  File "C:\Users\bayir\anaconda3\envs\kideny\lib\shutil.py", line 256, in copyfile
+    with open(dst, 'wb') as fdst:
+OSError: [Errno 22] Invalid argument: 'artifacts/data_ingestion/data.zip'
+[2025-03-26 08:57:33,106: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-03-26 08:57:33,106: INFO: common: created directory at: artifacts]
+[2025-03-26 08:57:33,106: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-03-26 08:57:33,106: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-03-26 08:57:38,571: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-03-26 08:57:43,616: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-03-26 08:57:43,616: INFO: main: *******************]
+[2025-03-26 08:57:43,616: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2025-03-26 08:57:43,627: INFO: common: created directory at: artifacts]
+[2025-03-26 08:57:43,627: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-03-26 08:57:47,655: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-03-26 08:57:48,068: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2025-03-26 08:57:48,068: INFO: main: *******************]
+[2025-03-26 08:57:48,068: INFO: main: >>>>>> stage Training started <<<<<<]
+[2025-03-26 08:57:48,068: INFO: common: created directory at: artifacts]
+[2025-03-26 08:57:48,068: INFO: common: created directory at: artifacts\training]
+[2025-03-26 08:58:20,648: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2025-03-26 08:58:20,648: INFO: main: *******************]
+[2025-03-26 08:58:20,649: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2025-03-26 08:58:20,660: INFO: common: created directory at: artifacts]
+[2025-03-26 08:58:27,748: INFO: common: json file saved at: scores.json]
+[2025-03-26 08:58:27,749: INFO: common: json file saved at: scores.json]
+[2025-03-26 08:58:27,749: INFO: main: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
+[2025-03-26 09:00:45,077: INFO: common: created directory at: artifacts]
+[2025-03-26 09:01:03,452: INFO: common: json file saved at: scores.json]
+[2025-03-26 09:01:06,653: WARNING: save: Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 13). These functions will not be directly callable after loading.]
+[2025-03-26 09:01:07,612: INFO: builder_impl: Assets written to: C:\Users\bayir\AppData\Local\Temp\tmpdyg43bia\model\data\model\assets]
