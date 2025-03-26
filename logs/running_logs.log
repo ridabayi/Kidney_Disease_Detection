@@ -446,3 +446,34 @@ Traceback (most recent call last):
   File "C:\Users\bayir\anaconda3\envs\kideny\lib\zipfile.py", line 1714, in _extract_member
     open(targetpath, "wb") as target:
 PermissionError: [Errno 13] Permission denied: 'artifacts\\data_ingestion\\kidney-ct-scan-image\\Tumor\\Tumor- (998).jpg'
+[2025-03-26 10:41:30,185: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-03-26 10:41:30,188: INFO: common: created directory at: artifacts]
+[2025-03-26 10:41:30,188: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-03-26 10:41:30,188: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-03-26 10:41:35,378: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-03-26 10:41:36,694: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-03-26 10:41:45,139: INFO: stage_02_prepare_base_model: *******************]
+[2025-03-26 10:41:45,141: INFO: stage_02_prepare_base_model: >>>>>> stage Prepare base model started <<<<<<]
+[2025-03-26 10:41:45,145: INFO: common: created directory at: artifacts]
+[2025-03-26 10:41:45,145: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-03-26 10:41:48,187: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-03-26 10:41:48,790: INFO: stage_02_prepare_base_model: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2025-03-26 10:41:53,432: INFO: stage_03_model_training: *******************]
+[2025-03-26 10:41:53,432: INFO: stage_03_model_training: >>>>>> stage Training started <<<<<<]
+[2025-03-26 10:41:53,432: INFO: common: created directory at: artifacts]
+[2025-03-26 10:41:53,437: INFO: common: created directory at: artifacts\training]
+[2025-03-26 10:42:34,158: INFO: stage_03_model_training: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2025-03-26 10:42:49,800: INFO: stage_04_model_evaluation: *******************]
+[2025-03-26 10:42:49,801: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation stage started <<<<<<]
+[2025-03-26 10:42:49,806: INFO: common: created directory at: artifacts]
+[2025-03-26 10:43:08,398: INFO: common: json file saved at: scores.json]
+[2025-03-26 10:43:08,400: INFO: common: json file saved at: scores.json]
+[2025-03-26 10:43:08,400: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
