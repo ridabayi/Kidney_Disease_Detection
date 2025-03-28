@@ -477,3 +477,65 @@ x==========x]
 [2025-03-26 10:43:08,400: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation stage completed <<<<<<
 
 x==========x]
+[2025-03-26 13:46:28,373: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.175:8080]
+[2025-03-26 13:46:28,374: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-03-26 13:47:32,832: INFO: _internal: 127.0.0.1 - - [26/Mar/2025 13:47:32] "GET / HTTP/1.1" 200 -]
+[2025-03-26 13:47:57,741: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\bayir\anaconda3\envs\kideny\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\bayir\anaconda3\envs\kideny\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\bayir\anaconda3\envs\kideny\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\bayir\anaconda3\envs\kideny\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\bayir\anaconda3\envs\kideny\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\bayir\anaconda3\envs\kideny\lib\site-packages\flask_cors\decorator.py", line 121, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\bayir\Documents\Kidney_Disease_Detection\app.py", line 39, in predictRoute
+    result = clApp.classifier.predict()
+  File "c:\users\bayir\documents\kidney_disease_detection\src\CnnClassifier\pipeline\prediction.py", line 13, in predict
+    model = load_model(os.path.join("model", "model.h5"))
+  File "C:\Users\bayir\anaconda3\envs\kideny\lib\site-packages\keras\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\bayir\anaconda3\envs\kideny\lib\site-packages\keras\saving\save.py", line 226, in load_model
+    raise IOError(
+OSError: No file or directory found at model\model.h5
+[2025-03-26 13:47:57,741: INFO: _internal: 127.0.0.1 - - [26/Mar/2025 13:47:57] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2025-03-26 13:49:36,961: INFO: _internal: 127.0.0.1 - - [26/Mar/2025 13:49:36] "GET / HTTP/1.1" 200 -]
+[2025-03-26 13:49:43,339: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\bayir\anaconda3\envs\kideny\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\bayir\anaconda3\envs\kideny\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\bayir\anaconda3\envs\kideny\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\bayir\anaconda3\envs\kideny\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\bayir\anaconda3\envs\kideny\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\bayir\anaconda3\envs\kideny\lib\site-packages\flask_cors\decorator.py", line 121, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\bayir\Documents\Kidney_Disease_Detection\app.py", line 39, in predictRoute
+    result = clApp.classifier.predict()
+  File "c:\users\bayir\documents\kidney_disease_detection\src\CnnClassifier\pipeline\prediction.py", line 13, in predict
+    model = load_model(os.path.join("model", "model.h5"))
+  File "C:\Users\bayir\anaconda3\envs\kideny\lib\site-packages\keras\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\bayir\anaconda3\envs\kideny\lib\site-packages\keras\saving\save.py", line 226, in load_model
+    raise IOError(
+OSError: No file or directory found at model\model.h5
+[2025-03-26 13:49:43,340: INFO: _internal: 127.0.0.1 - - [26/Mar/2025 13:49:43] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2025-03-28 09:03:44,658: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.176:8080]
+[2025-03-28 09:03:44,659: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-03-28 09:03:52,481: INFO: _internal: 192.168.1.176 - - [28/Mar/2025 09:03:52] "GET / HTTP/1.1" 200 -]
+[2025-03-28 09:04:06,776: INFO: _internal: 192.168.1.176 - - [28/Mar/2025 09:04:06] "POST /predict HTTP/1.1" 200 -]
