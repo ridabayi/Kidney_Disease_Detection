@@ -539,3 +539,46 @@ OSError: No file or directory found at model\model.h5
 [2025-03-28 09:03:44,659: INFO: _internal: [33mPress CTRL+C to quit[0m]
 [2025-03-28 09:03:52,481: INFO: _internal: 192.168.1.176 - - [28/Mar/2025 09:03:52] "GET / HTTP/1.1" 200 -]
 [2025-03-28 09:04:06,776: INFO: _internal: 192.168.1.176 - - [28/Mar/2025 09:04:06] "POST /predict HTTP/1.1" 200 -]
+[2025-03-28 10:59:45,604: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.176:8080]
+[2025-03-28 10:59:45,605: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-03-28 10:59:52,885: INFO: _internal: 127.0.0.1 - - [28/Mar/2025 10:59:52] "GET / HTTP/1.1" 200 -]
+[2025-03-28 11:00:09,293: INFO: _internal: 127.0.0.1 - - [28/Mar/2025 11:00:09] "POST /predict HTTP/1.1" 200 -]
+[2025-03-28 11:00:45,820: INFO: _internal: 127.0.0.1 - - [28/Mar/2025 11:00:45] "POST /predict HTTP/1.1" 200 -]
+[2025-03-28 11:00:47,904: INFO: _internal: 127.0.0.1 - - [28/Mar/2025 11:00:47] "POST /predict HTTP/1.1" 200 -]
+[2025-03-28 11:14:23,920: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\bayir\anaconda3\envs\kideny\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\bayir\anaconda3\envs\kideny\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\bayir\anaconda3\envs\kideny\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\bayir\anaconda3\envs\kideny\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\bayir\anaconda3\envs\kideny\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\bayir\anaconda3\envs\kideny\lib\site-packages\flask_cors\decorator.py", line 121, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\bayir\Documents\Kidney_Disease_Detection\app.py", line 39, in predictRoute
+    result = clApp.classifier.predict()
+  File "c:\users\bayir\documents\kidney_disease_detection\src\CnnClassifier\pipeline\prediction.py", line 16, in predict
+    test_image = image.load_img(imagename, target_size = (224, 224))
+  File "C:\Users\bayir\anaconda3\envs\kideny\lib\site-packages\keras\utils\image_utils.py", line 423, in load_img
+    img = pil_image.open(io.BytesIO(f.read()))
+  File "C:\Users\bayir\anaconda3\envs\kideny\lib\site-packages\PIL\Image.py", line 3532, in open
+    raise UnidentifiedImageError(msg)
+PIL.UnidentifiedImageError: cannot identify image file <_io.BytesIO object at 0x000002B58A409710>
+[2025-03-28 11:14:23,961: INFO: _internal: 127.0.0.1 - - [28/Mar/2025 11:14:23] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2025-03-28 11:14:33,292: INFO: _internal: 127.0.0.1 - - [28/Mar/2025 11:14:33] "GET / HTTP/1.1" 200 -]
+[2025-03-28 11:14:41,061: INFO: _internal: 127.0.0.1 - - [28/Mar/2025 11:14:41] "POST /predict HTTP/1.1" 200 -]
+[2025-03-28 11:30:51,139: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.176:8080]
+[2025-03-28 11:30:51,140: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-03-28 11:30:53,843: INFO: _internal: 127.0.0.1 - - [28/Mar/2025 11:30:53] "GET / HTTP/1.1" 200 -]
+[2025-03-28 11:30:59,951: INFO: _internal: 192.168.1.176 - - [28/Mar/2025 11:30:59] "GET / HTTP/1.1" 200 -]
+[2025-03-28 11:31:06,563: INFO: _internal: 127.0.0.1 - - [28/Mar/2025 11:31:06] "[33mPOST /predict HTTP/1.1[0m" 404 -]

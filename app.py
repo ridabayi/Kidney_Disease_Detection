@@ -31,13 +31,16 @@ def trainRoute():
     return "Training done successfully!"
 
 
-@app.route("/predict", methods=['POST'])
+@app.route("/heatmap", methods=['POST'])
 @cross_origin()
-def predictRoute():
+def heatmapRoute():
     image = request.json['image']
     decodeImage(image, clApp.filename)
-    result = clApp.classifier.predict()
-    return jsonify(result)
+    
+    # Generate heatmap logic here
+    heatmap_data = clApp.classifier.generate_heatmap()  # Placeholder for heatmap generation logic
+    return jsonify({"heatmap": heatmap_data})
+
 
 
 if __name__ == "__main__":
