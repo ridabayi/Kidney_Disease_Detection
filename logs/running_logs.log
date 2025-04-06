@@ -582,3 +582,34 @@ PIL.UnidentifiedImageError: cannot identify image file <_io.BytesIO object at 0x
 [2025-03-28 11:30:53,843: INFO: _internal: 127.0.0.1 - - [28/Mar/2025 11:30:53] "GET / HTTP/1.1" 200 -]
 [2025-03-28 11:30:59,951: INFO: _internal: 192.168.1.176 - - [28/Mar/2025 11:30:59] "GET / HTTP/1.1" 200 -]
 [2025-03-28 11:31:06,563: INFO: _internal: 127.0.0.1 - - [28/Mar/2025 11:31:06] "[33mPOST /predict HTTP/1.1[0m" 404 -]
+[2025-04-06 12:36:25,941: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-04-06 12:36:25,941: INFO: common: created directory at: artifacts]
+[2025-04-06 12:36:25,941: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-04-06 12:36:25,956: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-04-06 12:36:31,868: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-04-06 12:36:36,995: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-04-06 12:36:36,995: INFO: main: *******************]
+[2025-04-06 12:36:36,995: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2025-04-06 12:36:37,011: INFO: common: created directory at: artifacts]
+[2025-04-06 12:36:37,011: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-04-06 12:36:40,345: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-04-06 12:36:41,261: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2025-04-06 12:36:41,262: INFO: main: *******************]
+[2025-04-06 12:36:41,263: INFO: main: >>>>>> stage Training started <<<<<<]
+[2025-04-06 12:36:41,268: INFO: common: created directory at: artifacts]
+[2025-04-06 12:36:41,269: INFO: common: created directory at: artifacts\training]
+[2025-04-06 12:37:11,751: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2025-04-06 12:37:11,751: INFO: main: *******************]
+[2025-04-06 12:37:11,751: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2025-04-06 12:37:11,751: INFO: common: created directory at: artifacts]
+[2025-04-06 12:37:18,607: INFO: common: json file saved at: scores.json]
+[2025-04-06 12:37:18,607: INFO: common: json file saved at: scores.json]
+[2025-04-06 12:37:18,607: INFO: main: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
