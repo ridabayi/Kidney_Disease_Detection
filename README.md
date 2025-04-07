@@ -1,7 +1,7 @@
 
 # Kidney Disease Detection 
 
-A CNN..
+An end-to-end AI pipeline for early diagnosis of kidney disease, featuring experiment tracking and data versioning with MLflow and DVC
 
 
 ## 📊 Project Context
