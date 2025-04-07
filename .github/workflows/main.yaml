@@ -13,6 +13,7 @@ permissions:
 
 jobs:
   integration:
+    if: "!contains(github.event.head_commit.message, 'skip-ci')"
     name: Continuous Integration
     runs-on: ubuntu-latest
     steps:
@@ -24,6 +25,7 @@ jobs:
 
       - name: Run unit tests
         run: echo "Running unit tests"
+
 
   build-and-push-ecr-image:
     name: Continuous Delivery
@@ -84,7 +86,7 @@ jobs:
       
       - name: Pull latest images
         run: |
-         docker pull ${{secrets.AWS_ECR_LOGIN_URI}}/${{ secrets.ECR_REPOSITORY_NAME }}:latest
+         docker pull ${{secrets.AWS_ECR_LOGIN_URI}}/${{ secrets.ECR_REPOSITORY_NAME }}:latest #
          
       # - name: Stop and remove container if running
       #   run: |

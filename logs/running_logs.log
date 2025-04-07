@@ -613,3 +613,7 @@ x==========x]
 [2025-04-06 12:37:18,607: INFO: main: >>>>>> stage Evaluation stage completed <<<<<<
 
 x==========x]
+[2025-04-07 13:07:56,387: INFO: common: created directory at: artifacts]
+[2025-04-07 13:07:56,389: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-04-07 13:07:56,391: INFO: 986331348: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-04-07 13:08:03,602: INFO: 986331348: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
