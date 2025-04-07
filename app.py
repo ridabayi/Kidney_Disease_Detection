@@ -31,19 +31,17 @@ def trainRoute():
     return "Training done successfully!"
 
 
-@app.route("/heatmap", methods=['POST'])
+@app.route("/predict", methods=['POST'])
 @cross_origin()
-def heatmapRoute():
+def predictRoute():
     image = request.json['image']
     decodeImage(image, clApp.filename)
-    
-    # Generate heatmap logic here
-    heatmap_data = clApp.classifier.generate_heatmap()  # Placeholder for heatmap generation logic
-    return jsonify({"heatmap": heatmap_data})
+    result = clApp.classifier.predict()
+    return jsonify(result)
 
 
 
 if __name__ == "__main__":
     clApp = ClientApp()
 
-    app.run(host='0.0.0.0', port=8080) #for AWS
+#    app.run(host='0.0.0.0', port=8080) #for AWS
