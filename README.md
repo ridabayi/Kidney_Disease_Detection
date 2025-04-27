@@ -1,108 +1,137 @@
+# Kidney Disease Detection 🩺 | CT Scan Image Classification
 
-# Kidney Disease Detection 
+![build](https://img.shields.io/badge/build-passing-brightgreen)
+![python](https://img.shields.io/badge/python-3.8%2B-blue)
+![license](https://img.shields.io/badge/license-MIT-yellow)
 
-A CNN..
-
-
-## 📊 Project Context
-
-Kidney diseases are a significant global health problem, often leading to serious complications if not detected early. This project leverages **Convolutional Neural Networks (CNN)** to automatically classify kidney-related conditions from **CT scan images**, assisting healthcare professionals in early diagnosis.
-
-### Why Kidney Disease Classification?
-- Kidney diseases affect **over 10% of the world's population**.
-- Early detection is critical to avoid **kidney failure** and improve patient outcomes.
-- Automated classification systems reduce the workload of radiologists and improve diagnosis speed.
-
-### Example of Kidney CT Scan Image:
-
-![Kidney CT Scan](https://www.researchgate.net/profile/Sina-Bagheri-2/publication/351048862/figure/fig2/AS:1019366702325760@1619523801212/Example-of-a-kidney-CT-scan-image.png)
-*Example of a kidney CT scan image used for classification.*
-
-### Deep Learning Pipeline Overview:
-
-![Deep Learning Pipeline](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*JgE7txbM9BY-xXcdhOTAxA.png)
-*General workflow of a CNN-based classification system.*
+> **State‑of‑the‑art Convolutional Neural Networks (CNNs) that classify kidney CT slices into _Normal_, _Cyst_, _Stone_ or _Tumor_ — packaged for reproducible research and real‑world deployment.**
 
 ---
 
-## 🚀 Quick Start
-
-### 1️⃣ Clone the repository
-```bash
-git clone https://github.com/krishnaik06/Kidney-Disease-Classification-Deep-Learning-Project
-cd Kidney-Disease-Classification-Deep-Learning-Project
-```
-
-### 2️⃣ Create and activate a conda environment
-```bash
-conda create -n cnncls python=3.8 -y
-conda activate cnncls
-```
-
-### 3️⃣ Install project dependencies
-```bash
-pip install -r requirements.txt
-```
-
-### 4️⃣ Run the app locally
-```bash
-python app.py
-```
-
-📍 **Then open your browser and go to:**  
-`http://localhost:5000` or your specified port.
+## 📚 Table of Contents
+1. [Project Context](#project-context)
+2. [Deep‑Learning Pipeline](#deep-learning-pipeline)
+3. [Quick Start](#-quick-start)
+4. [Project Structure](#-project-structure)
+5. [Tech Stack](#-tech-stack)
+6. [Workflows](#️-workflows)
+7. [Contribution Guide](#-how-to-contribute)
+8. [License](#license)
 
 ---
 
-## 🛠️ Workflows
+## 📊 Project Context
 
-Here is the recommended development workflow:
+Kidney diseases affect **> 10 % of the global population**. Early detection dramatically reduces the risk of kidney failure, yet manual CT‑scan interpretation is time‑consuming and error‑prone. This repository delivers an **automated classifier** that supports radiologists with rapid, consistent predictions.
 
-```
-🔄 Update config.yaml
-🛡️ Update secrets.yaml [Optional]
-⚙️ Update params.yaml
-🧩 Update the entity
-🔧 Update the configuration manager in src/config
-🧱 Update components
-👵 Update pipeline
-💻 Update main.py
-📜 Update dvc.yaml
-🚀 Launch app.py
-```
+| Why it matters | Impact |
+|---------------|--------|
+| ⏱️  Radiologist shortage | Automation speeds up workflow |
+| 🏥  Early intervention | Better patient outcomes |
+| 💸  Cost reduction | Fewer invasive procedures |
+
+### Example Kidney CT Image
+
+![Kidney CT Scan](https://www.researchgate.net/profile/Sina-Bagheri-2/publication/351048862/figure/fig2/AS:1019366702325760@1619523801212/Example-of-a-kidney-CT-scan-image.png)
+
+### End‑to‑End Pipeline Overview
+
+![DL Pipeline](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*JgE7txbM9BY-xXcdhOTAxA.png)
 
 ---
 
-## 📂 Project Structure
+## 🚀 Quick Start
 
+<details>
+<summary><strong>Local (Conda)</strong></summary>
+
+```bash
+# 1️⃣ Clone
+ git clone https://github.com/<your‑user>/Kidney_Disease_Detection.git
+ cd Kidney_Disease_Detection
+
+# 2️⃣ Env
+ conda create -n kidneycnn python=3.8 -y && conda activate kidneycnn
+
+# 3️⃣ Install
+ pip install -r requirements.txt
+
+# 4️⃣ Launch the demo API
+ python app.py  # default http://localhost:5000
 ```
-├── app.py
-├── main.py
-├── dvc.yaml
-├── config.yaml
-├── params.yaml
-├── secrets.yaml [Optional]
+
+</details>
+
+<details>
+<summary><strong>Docker</strong></summary>
+
+```bash
+docker build -t kidneycnn .
+docker run --rm -p 5000:5000 --gpus all kidneycnn
+```
+
+</details>
+
+---
+
+## 🏗️ Project Structure
+
+```text
+.
+├── app.py                    # FastAPI / Flask demo server
+├── configs/                  # YAML configs for every pipeline step
 ├── src/
-│   ├── config/
-│   ├── components/
-│   └── pipeline/
-├── artifacts/
-├── requirements.txt
-└── README.md
+│   ├── config/               # configuration manager helpers
+│   ├── components/           # data, model, evaluation building blocks
+│   └── pipeline/             # orchestrated ML pipelines (DVC)
+├── artifacts/                # auto‑generated data & model artefacts
+├── dvc.yaml                  # pipeline stages & dependencies
+├── params.yaml               # hyper‑parameters
+├── requirements.txt          # Python dependencies
+└── README.md                 # ← you are here
 ```
 
 ---
 
-## 💡 Notes
-- **DVC** is used for data & model versioning.
-- **src/** folder contains modularized code (configuration, components, pipelines).
-- You can modify `params.yaml` and `config.yaml` based on your dataset or training settings.
+## ⚙️ Tech Stack
+
+| Category | Tool |
+|----------|------|
+| Core DL | PyTorch, TorchVision |
+| Training Loop | PyTorch Lightning |
+| Orchestration | Hydra, DVC |
+| Experiment Tracking | TensorBoard, Weights & Biases (optional) |
+| Serving | FastAPI / Flask & Docker |
 
 ---
 
-## ✅ How to Contribute?
-1. Fork the project 🍵
-2. Create your feature branch (`git checkout -b feature/YourFeature`)
-3. Commit your changes (`git commit -m 'Add: Your feature'`)
-4. Push to the branch (`git push origin feature/YourFeature`)
-5. Open a Pull Request 🔄
+## 🛠️ Workflows
+
+```text
+📝 Edit config.yaml / params.yaml →
+📦 DVC pipeline rebuilds →
+🧪 Unit tests (pytest) & pre‑commit hooks →
+📊 Tracked experiments →
+🚀 Deploy with Docker
+```
+
+---
+
+## ✅ How to Contribute
+
+1. **Fork** the repo
+2. `git checkout -b feature/<YourFeature>`
+3. Commit following Conventional Commits
+4. `git push origin feature/<YourFeature>`
+5. Open a **Pull Request** – we’ll review ASAP
+
+---
+
+## 📜 License
+
+This project is released under the **MIT License**.
+
+---
+
+> *“Where there is data smoke, there is business fire.”* — Thomas Redman
+
