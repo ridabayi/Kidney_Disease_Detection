@@ -1,48 +1,57 @@
 import os
 from flask import Flask, render_template, request, jsonify
-from flask_cors import CORS, cross_origin
-from CnnClassifier.utils.common import decodeImage
+from flask_cors import CORS
 from CnnClassifier.pipeline.prediction import PredictionPipeline
 
-
-os.putenv('LANG', 'en_US.UTF-8')
-os.putenv('LC_ALL', 'en_US.UTF-8')
-
+# Initialize Flask App
 app = Flask(__name__)
 CORS(app)
 
+# Set a max upload size (16MB)
+app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024
+
+# Initialize your Prediction Pipeline
 class ClientApp:
     def __init__(self):
         self.filename = "inputImage.jpg"
         self.classifier = PredictionPipeline(self.filename)
 
+# Initialize once
+clApp = ClientApp()
 
-@app.route("/", methods=['GET'])
-@cross_origin()
+# Home Route
+@app.route("/", methods=["GET"])
 def home():
     return render_template('index.html')
 
-
-@app.route("/train", methods=['GET', 'POST'])
-@cross_origin()
+# Train Route (optional)
+@app.route("/train", methods=["GET", "POST"])
 def trainRoute():
     os.system("python main.py")
-    # os.system("dvc repro")
-    return "Training done successfully!"
+    return "Training Done Successfully!"
 
-
-@app.route("/predict", methods=['POST'])
-@cross_origin()
+# Predict Route
+@app.route("/predict", methods=["POST"])
 def predictRoute():
-    image = request.json['image']
-    decodeImage(image, clApp.filename)
-    result = clApp.classifier.predict()
-    return jsonify(result)
+    try:
+        # Check if file part is in the request
+        if 'file' not in request.files:
+            return jsonify({"error": "No file uploaded"}), 400
+        
+        file = request.files['file']
 
+        # Save the uploaded file
+        file.save(clApp.filename)
 
+        # Predict using your pipeline
+        result = clApp.classifier.predict()
 
+        # Send prediction back
+        return jsonify(result)
+
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+# Run the app
 if __name__ == "__main__":
-    clApp = ClientApp()
-    app.run(debug=True, port=8080)
-
-#    app.run(host='0.0.0.0', port=8080) #for AWS
+    app.run(host='0.0.0.0', port=8080, debug=True)

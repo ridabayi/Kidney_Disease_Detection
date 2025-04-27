@@ -833,3 +833,144 @@ ValueError: Invalid dataset specification https://drive.google.com/file/d/1vlhZ5
 [2025-04-27 14:54:35,247: WARNING: _internal:  * Debugger is active!]
 [2025-04-27 14:54:35,261: INFO: _internal:  * Debugger PIN: 172-061-971]
 [2025-04-27 14:54:53,619: INFO: _internal: 127.0.0.1 - - [27/Apr/2025 14:54:53] "GET / HTTP/1.1" 200 -]
+[2025-04-27 15:09:16,156: INFO: utils: NumExpr defaulting to 12 threads.]
+[2025-04-27 15:09:16,740: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080]
+[2025-04-27 15:09:16,741: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-04-27 15:09:16,742: INFO: _internal:  * Restarting with stat]
+[2025-04-27 15:09:20,100: INFO: utils: NumExpr defaulting to 12 threads.]
+[2025-04-27 15:09:20,926: WARNING: _internal:  * Debugger is active!]
+[2025-04-27 15:09:20,935: INFO: _internal:  * Debugger PIN: 172-061-971]
+[2025-04-27 15:09:20,974: INFO: _internal: 127.0.0.1 - - [27/Apr/2025 15:09:20] "GET / HTTP/1.1" 200 -]
+[2025-04-27 15:09:30,309: INFO: _internal: 127.0.0.1 - - [27/Apr/2025 15:09:30] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2025-04-27 15:29:34,362: INFO: utils: NumExpr defaulting to 12 threads.]
+[2025-04-27 15:29:35,186: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080]
+[2025-04-27 15:29:35,186: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-04-27 15:29:35,188: INFO: _internal:  * Restarting with stat]
+[2025-04-27 15:29:39,522: INFO: utils: NumExpr defaulting to 12 threads.]
+[2025-04-27 15:29:40,725: WARNING: _internal:  * Debugger is active!]
+[2025-04-27 15:29:40,737: INFO: _internal:  * Debugger PIN: 172-061-971]
+[2025-04-27 15:29:40,805: INFO: _internal: 127.0.0.1 - - [27/Apr/2025 15:29:40] "GET / HTTP/1.1" 200 -]
+[2025-04-27 15:29:41,258: INFO: _internal: 127.0.0.1 - - [27/Apr/2025 15:29:41] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -]
+[2025-04-27 15:31:15,412: INFO: _internal: 127.0.0.1 - - [27/Apr/2025 15:31:15] "GET / HTTP/1.1" 200 -]
+[2025-04-27 15:31:16,081: INFO: _internal: 127.0.0.1 - - [27/Apr/2025 15:31:16] "GET / HTTP/1.1" 200 -]
+[2025-04-27 15:31:19,451: INFO: _internal: 127.0.0.1 - - [27/Apr/2025 15:31:19] "GET / HTTP/1.1" 200 -]
+[2025-04-27 15:32:23,634: INFO: utils: NumExpr defaulting to 12 threads.]
+[2025-04-27 15:32:24,243: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080]
+[2025-04-27 15:32:24,243: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-04-27 15:32:24,246: INFO: _internal:  * Restarting with stat]
+[2025-04-27 15:32:27,250: INFO: utils: NumExpr defaulting to 12 threads.]
+[2025-04-27 15:32:27,956: WARNING: _internal:  * Debugger is active!]
+[2025-04-27 15:32:27,969: INFO: _internal:  * Debugger PIN: 172-061-971]
+[2025-04-27 15:32:28,024: INFO: _internal: 127.0.0.1 - - [27/Apr/2025 15:32:28] "GET / HTTP/1.1" 200 -]
+[2025-04-27 15:33:03,815: INFO: _internal: 127.0.0.1 - - [27/Apr/2025 15:33:03] "GET / HTTP/1.1" 200 -]
+[2025-04-27 15:34:26,648: INFO: _internal:  * Detected change in 'C:\\Users\\bayir\\Documents\\endtoend\\app.py', reloading]
+[2025-04-27 15:34:27,326: INFO: _internal:  * Restarting with stat]
+[2025-04-27 15:34:32,265: INFO: utils: NumExpr defaulting to 12 threads.]
+[2025-04-27 15:34:32,889: WARNING: _internal:  * Debugger is active!]
+[2025-04-27 15:34:32,895: INFO: _internal:  * Debugger PIN: 172-061-971]
+[2025-04-27 15:34:46,011: INFO: utils: NumExpr defaulting to 12 threads.]
+[2025-04-27 15:34:46,476: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080]
+[2025-04-27 15:34:46,477: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-04-27 15:34:46,478: INFO: _internal:  * Restarting with stat]
+[2025-04-27 15:34:49,699: INFO: utils: NumExpr defaulting to 12 threads.]
+[2025-04-27 15:34:50,263: WARNING: _internal:  * Debugger is active!]
+[2025-04-27 15:34:50,269: INFO: _internal:  * Debugger PIN: 172-061-971]
+[2025-04-27 15:34:50,301: INFO: _internal: 127.0.0.1 - - [27/Apr/2025 15:34:50] "GET / HTTP/1.1" 200 -]
+[2025-04-27 15:37:12,220: INFO: _internal:  * Detected change in 'C:\\Users\\bayir\\Documents\\endtoend\\app.py', reloading]
+[2025-04-27 15:37:12,811: INFO: _internal:  * Restarting with stat]
+[2025-04-27 15:37:16,932: INFO: utils: NumExpr defaulting to 12 threads.]
+[2025-04-27 15:37:17,593: WARNING: _internal:  * Debugger is active!]
+[2025-04-27 15:37:17,601: INFO: _internal:  * Debugger PIN: 172-061-971]
+[2025-04-27 15:37:26,343: INFO: utils: NumExpr defaulting to 12 threads.]
+[2025-04-27 15:37:28,111: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.175:8080]
+[2025-04-27 15:37:28,112: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-04-27 15:37:28,113: INFO: _internal:  * Restarting with stat]
+[2025-04-27 15:37:31,124: INFO: utils: NumExpr defaulting to 12 threads.]
+[2025-04-27 15:37:31,612: WARNING: _internal:  * Debugger is active!]
+[2025-04-27 15:37:31,619: INFO: _internal:  * Debugger PIN: 172-061-971]
+[2025-04-27 15:37:33,481: INFO: _internal: 127.0.0.1 - - [27/Apr/2025 15:37:33] "GET / HTTP/1.1" 200 -]
+[2025-04-27 15:37:36,518: INFO: _internal: 192.168.1.175 - - [27/Apr/2025 15:37:36] "GET / HTTP/1.1" 200 -]
+[2025-04-27 15:37:36,904: INFO: _internal: 192.168.1.175 - - [27/Apr/2025 15:37:36] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -]
+[2025-04-27 15:39:30,311: INFO: utils: NumExpr defaulting to 12 threads.]
+[2025-04-27 15:39:32,210: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.175:8080]
+[2025-04-27 15:39:32,210: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-04-27 15:39:32,212: INFO: _internal:  * Restarting with stat]
+[2025-04-27 15:39:35,161: INFO: utils: NumExpr defaulting to 12 threads.]
+[2025-04-27 15:39:35,722: WARNING: _internal:  * Debugger is active!]
+[2025-04-27 15:39:35,733: INFO: _internal:  * Debugger PIN: 172-061-971]
+[2025-04-27 15:39:40,156: INFO: _internal: 192.168.1.175 - - [27/Apr/2025 15:39:40] "GET / HTTP/1.1" 200 -]
+[2025-04-27 15:39:51,983: INFO: _internal: 192.168.1.175 - - [27/Apr/2025 15:39:51] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2025-04-27 15:39:52,994: ERROR: _internal: Error on request:
+Traceback (most recent call last):
+  File "C:\Users\bayir\anaconda3\envs\kideny\lib\site-packages\werkzeug\serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+  File "C:\Users\bayir\anaconda3\envs\kideny\lib\site-packages\werkzeug\serving.py", line 355, in execute
+    data = self.rfile.read(10_000_000)
+MemoryError]
+[2025-04-27 15:40:19,044: INFO: _internal: 192.168.1.175 - - [27/Apr/2025 15:40:19] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -]
+[2025-04-27 15:41:53,777: INFO: utils: NumExpr defaulting to 12 threads.]
+[2025-04-27 15:41:55,740: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.175:8080]
+[2025-04-27 15:41:55,740: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-04-27 15:41:55,750: INFO: _internal:  * Restarting with stat]
+[2025-04-27 15:41:58,780: INFO: utils: NumExpr defaulting to 12 threads.]
+[2025-04-27 15:41:59,776: WARNING: _internal:  * Debugger is active!]
+[2025-04-27 15:41:59,786: INFO: _internal:  * Debugger PIN: 172-061-971]
+[2025-04-27 15:41:59,822: INFO: _internal: 192.168.1.175 - - [27/Apr/2025 15:41:59] "GET / HTTP/1.1" 200 -]
+[2025-04-27 15:44:55,405: INFO: utils: NumExpr defaulting to 12 threads.]
+[2025-04-27 15:44:57,410: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.175:8080]
+[2025-04-27 15:44:57,410: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-04-27 15:44:57,414: INFO: _internal:  * Restarting with stat]
+[2025-04-27 15:45:00,546: INFO: utils: NumExpr defaulting to 12 threads.]
+[2025-04-27 15:45:01,025: WARNING: _internal:  * Debugger is active!]
+[2025-04-27 15:45:01,032: INFO: _internal:  * Debugger PIN: 172-061-971]
+[2025-04-27 15:45:02,138: INFO: _internal: 192.168.1.175 - - [27/Apr/2025 15:45:02] "GET / HTTP/1.1" 200 -]
+[2025-04-27 15:47:44,000: INFO: utils: NumExpr defaulting to 12 threads.]
+[2025-04-27 15:47:45,944: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.175:8080]
+[2025-04-27 15:47:45,944: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-04-27 15:47:45,946: INFO: _internal:  * Restarting with stat]
+[2025-04-27 15:47:48,907: INFO: utils: NumExpr defaulting to 12 threads.]
+[2025-04-27 15:47:49,672: WARNING: _internal:  * Debugger is active!]
+[2025-04-27 15:47:49,682: INFO: _internal:  * Debugger PIN: 172-061-971]
+[2025-04-27 15:47:49,724: INFO: _internal: 192.168.1.175 - - [27/Apr/2025 15:47:49] "GET / HTTP/1.1" 200 -]
+[2025-04-27 15:53:17,898: INFO: utils: NumExpr defaulting to 12 threads.]
+[2025-04-27 15:53:19,875: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.175:8080]
+[2025-04-27 15:53:19,875: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-04-27 15:53:19,877: INFO: _internal:  * Restarting with stat]
+[2025-04-27 15:53:22,634: INFO: utils: NumExpr defaulting to 12 threads.]
+[2025-04-27 15:53:23,090: WARNING: _internal:  * Debugger is active!]
+[2025-04-27 15:53:23,101: INFO: _internal:  * Debugger PIN: 172-061-971]
+[2025-04-27 15:53:31,534: INFO: _internal: 192.168.1.175 - - [27/Apr/2025 15:53:31] "GET / HTTP/1.1" 200 -]
+[2025-04-27 15:55:49,608: INFO: utils: NumExpr defaulting to 12 threads.]
+[2025-04-27 15:55:51,454: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.175:8080]
+[2025-04-27 15:55:51,455: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-04-27 15:55:51,459: INFO: _internal:  * Restarting with stat]
+[2025-04-27 15:55:54,153: INFO: utils: NumExpr defaulting to 12 threads.]
+[2025-04-27 15:55:54,603: WARNING: _internal:  * Debugger is active!]
+[2025-04-27 15:55:54,611: INFO: _internal:  * Debugger PIN: 172-061-971]
+[2025-04-27 15:56:01,517: INFO: _internal: 192.168.1.175 - - [27/Apr/2025 15:56:01] "GET / HTTP/1.1" 200 -]
+[2025-04-27 15:56:27,928: INFO: _internal: 192.168.1.175 - - [27/Apr/2025 15:56:27] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
