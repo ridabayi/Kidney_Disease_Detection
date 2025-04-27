@@ -1,85 +1,81 @@
-# 🚀 Kidney Disease Detection | CT Scan Image Intelligence
 
-![build](https://img.shields.io/badge/build-passing-brightgreen)
-![python](https://img.shields.io/badge/python-3.8%2B-blue)
-![license](https://img.shields.io/badge/license-MIT-yellow)
+# Kidney Disease Detection 
 
-> **Empowering healthcare through deep learning: a precision-driven CNN system that detects kidney anomalies — Normal, Cyst, Stone, Tumor — from CT images, delivering insights faster and smarter.**
+A CNN..
 
----
 
-## 📚 Table of Contents
-- [Project Vision](#project-vision)
-- [Pipeline Overview](#pipeline-overview)
-- [Quick Start](#quick-start)
-- [Project Structure](#project-structure)
-- [Technology Stack](#technology-stack)
-- [Development Workflow](#development-workflow)
-- [Contribution Guide](#contribution-guide)
-- [License](#license)
+## 📊 Project Context
 
----
+Kidney diseases are a significant global health problem, often leading to serious complications if not detected early. This project leverages **Convolutional Neural Networks (CNN)** to automatically classify kidney-related conditions from **CT scan images**, assisting healthcare professionals in early diagnosis.
 
-## 🌍 Project Vision
+### Why Kidney Disease Classification?
+- Kidney diseases affect **over 10% of the world's population**.
+- Early detection is critical to avoid **kidney failure** and improve patient outcomes.
+- Automated classification systems reduce the workload of radiologists and improve diagnosis speed.
 
-Kidney disease silently impacts **over 850 million people worldwide**. Early identification is crucial yet under-prioritized due to radiology backlogs. Our project accelerates diagnosis using AI — blending **medical imaging** and **deep learning** to predict kidney conditions with high fidelity.
-
-| Challenge | Solution |
-|-----------|----------|
-| Delayed diagnoses | Rapid automated CT classification |
-| High radiologist workload | Intelligent decision support |
-| Costly and invasive procedures | Non-invasive, fast, scalable screening |
-
-### 📷 Example CT Image
+### Example of Kidney CT Scan Image:
 
 ![Kidney CT Scan](https://www.researchgate.net/profile/Sina-Bagheri-2/publication/351048862/figure/fig2/AS:1019366702325760@1619523801212/Example-of-a-kidney-CT-scan-image.png)
+*Example of a kidney CT scan image used for classification.*
 
-### 🔥 Deep Learning Pipeline
+### Deep Learning Pipeline Overview:
 
-![DL Pipeline](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*JgE7txbM9BY-xXcdhOTAxA.png)
-
-From data ingestion → augmentation → training → evaluation → deployment.
+![Deep Learning Pipeline](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*JgE7txbM9BY-xXcdhOTAxA.png)
+*General workflow of a CNN-based classification system.*
 
 ---
 
 ## 🚀 Quick Start
 
-<details>
-<summary><strong>Setup Locally</strong></summary>
-
+### 1️⃣ Clone the repository
 ```bash
-# 1. Clone repository
- git clone https://github.com/<your-user>/Kidney_Disease_Detection.git
- cd Kidney_Disease_Detection
-
-# 2. Create and activate environment
- conda create -n kidneycnn python=3.8 -y
- conda activate kidneycnn
-
-# 3. Install dependencies
- pip install -r requirements.txt
-
-# 4. Run the application
- python app.py  # Access via http://localhost:5000
+git clone https://github.com/krishnaik06/Kidney-Disease-Classification-Deep-Learning-Project
+cd Kidney-Disease-Classification-Deep-Learning-Project
 ```
 
-</details>
-
-<details>
-<summary><strong>Launch with Docker</strong></summary>
-
+### 2️⃣ Create and activate a conda environment
 ```bash
-docker build -t kidneycnn .
-docker run --rm -p 5000:5000 --gpus all kidneycnn
+conda create -n cnncls python=3.8 -y
+conda activate cnncls
 ```
 
-</details>
+### 3️⃣ Install project dependencies
+```bash
+pip install -r requirements.txt
+```
+
+### 4️⃣ Run the app locally
+```bash
+python app.py
+```
+
+📍 **Then open your browser and go to:**  
+`http://localhost:5000` or your specified port.
 
 ---
 
-## 🏗️ Project Structure
+## 🛠️ Workflows
 
-```bash
+Here is the recommended development workflow:
+
+```
+🔄 Update config.yaml
+🛡️ Update secrets.yaml [Optional]
+⚙️ Update params.yaml
+🧩 Update the entity
+🔧 Update the configuration manager in src/config
+🧱 Update components
+👵 Update pipeline
+💻 Update main.py
+📜 Update dvc.yaml
+🚀 Launch app.py
+```
+
+---
+
+## 📂 Project Structure
+
+```
 .
 ├── .dvc/                     # DVC metadata
 ├── .github/                  # Actions & workflows
@@ -109,46 +105,16 @@ docker run --rm -p 5000:5000 --gpus all kidneycnn
 
 ---
 
-## ⚙️ Technology Stack
-
-| Purpose | Tools |
-|---------|-------|
-| Deep Learning | PyTorch, TorchVision |
-| Experimentation | PyTorch Lightning, TensorBoard, WandB |
-| Pipeline Management | Hydra, DVC |
-| Serving | FastAPI / Flask, Docker |
+## 💡 Notes
+- **DVC** is used for data & model versioning.
+- **src/** folder contains modularized code (configuration, components, pipelines).
+- You can modify `params.yaml` and `config.yaml` based on your dataset or training settings.
 
 ---
 
-## 🛠️ Development Workflow
-
-```bash
-✍️ Edit config.yaml / params.yaml
-🛠️ Update pipelines and models
-🧪 Test with pytest + pre-commit hooks
-📈 Monitor experiments
-🚀 Deploy seamlessly via Docker
-```
-
----
-
-## 🤝 Contribution Guide
-
-We welcome contributions from the community!
-
-1. Fork the repository 🍴
-2. Create your branch (`git checkout -b feature/YourFeature`)
-3. Make your changes and commit (`git commit -m 'Add amazing feature'`)
-4. Push to GitHub (`git push origin feature/YourFeature`)
-5. Open a Pull Request 🔥
-
----
-
-## 📜 License
-
-Distributed under the **MIT License**.
-
----
-
-> *"AI will not replace doctors, but doctors who use AI will replace those who don't."* — Adapted from Dr. Eric Topol
-
+## ✅ How to Contribute?
+1. Fork the project 🍵
+2. Create your feature branch (`git checkout -b feature/YourFeature`)
+3. Commit your changes (`git commit -m 'Add: Your feature'`)
+4. Push to the branch (`git push origin feature/YourFeature`)
+5. Open a Pull Request 🔄
