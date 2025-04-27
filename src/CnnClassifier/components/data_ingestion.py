@@ -1,3 +1,4 @@
+import kaggle
 import os
 import zipfile
 import gdown
@@ -11,34 +12,29 @@ class DataIngestion:
     def __init__(self, config: DataIngestionConfig):
         self.config = config
 
-    
-    def download_file(self)-> str:
+    def download_file(self) -> str:
         '''
-        Fetch data from the url
+        Fetch data from Kaggle
         '''
-
         try: 
-            dataset_url = self.config.source_URL
+            dataset_name = self.config.source_URL  # should be in the format "owner/dataset-name"
             zip_download_dir = self.config.local_data_file
-            os.makedirs("artifacts/data_ingestion", exist_ok=True)
-            logger.info(f"Downloading data from {dataset_url} into file {zip_download_dir}")
+            os.makedirs(os.path.dirname(zip_download_dir), exist_ok=True)
+            logger.info(f"Downloading dataset {dataset_name} into file {zip_download_dir}")
 
-            file_id = dataset_url.split("/")[-2]
-            prefix = 'https://drive.google.com/uc?/export=download&id='
-            gdown.download(prefix+file_id,zip_download_dir)
+            kaggle.api.dataset_download_files(
+            'nazmul0087/ct-kidney-dataset-normal-cyst-tumor-and-stone',
+            path='artifacts/data_ingestion/',
+            unzip=True)
 
-            logger.info(f"Downloaded data from {dataset_url} into file {zip_download_dir}")
+            logger.info(f"Downloaded dataset {dataset_name} into {zip_download_dir}")
 
         except Exception as e:
             raise e
-        
-    
 
     def extract_zip_file(self):
         """
-        zip_file_path: str
         Extracts the zip file into the data directory
-        Function returns None
         """
         unzip_path = self.config.unzip_dir
         os.makedirs(unzip_path, exist_ok=True)

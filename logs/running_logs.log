@@ -617,3 +617,205 @@ x==========x]
 [2025-04-07 13:07:56,389: INFO: common: created directory at: artifacts/data_ingestion]
 [2025-04-07 13:07:56,391: INFO: 986331348: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
 [2025-04-07 13:08:03,602: INFO: 986331348: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-04-17 15:55:52,652: INFO: utils: NumExpr defaulting to 12 threads.]
+[2025-04-17 15:56:47,241: INFO: utils: NumExpr defaulting to 12 threads.]
+[2025-04-17 15:56:47,756: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080]
+[2025-04-17 15:56:47,756: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-04-17 15:56:47,758: INFO: _internal:  * Restarting with stat]
+[2025-04-17 15:56:51,110: INFO: utils: NumExpr defaulting to 12 threads.]
+[2025-04-17 15:56:51,642: WARNING: _internal:  * Debugger is active!]
+[2025-04-17 15:56:51,645: INFO: _internal:  * Debugger PIN: 172-061-971]
+[2025-04-17 15:56:51,674: INFO: _internal: 127.0.0.1 - - [17/Apr/2025 15:56:51] "GET / HTTP/1.1" 200 -]
+[2025-04-17 15:57:06,449: INFO: _internal: 127.0.0.1 - - [17/Apr/2025 15:57:06] "POST /predict HTTP/1.1" 200 -]
+[2025-04-17 15:57:21,891: INFO: _internal:  * Detected change in 'C:\\Users\\bayir\\Documents\\Kidney_Disease_Detection\\app.py', reloading]
+[2025-04-17 15:57:22,967: INFO: _internal:  * Restarting with stat]
+[2025-04-27 12:23:45,383: INFO: common: created directory at: artifacts]
+[2025-04-27 12:23:45,385: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-04-27 12:23:45,387: INFO: 3583802252: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-04-27 12:25:44,220: INFO: common: created directory at: artifacts]
+[2025-04-27 12:25:44,224: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-04-27 12:25:44,227: INFO: 3583802252: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-04-27 12:26:22,621: INFO: 3583802252: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-04-27 12:27:26,975: INFO: common: created directory at: artifacts]
+[2025-04-27 12:27:26,980: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-04-27 12:27:26,982: INFO: 3583802252: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-04-27 12:28:10,189: INFO: 3583802252: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-04-27 12:28:10,195: ERROR: 2628198839: Error occurred during data ingestion process.]
+Traceback (most recent call last):
+  File "C:\Users\bayir\AppData\Local\Temp\ipykernel_34728\2628198839.py", line 6, in <module>
+    data_ingestion.extract_zip_file()
+  File "C:\Users\bayir\AppData\Local\Temp\ipykernel_34728\3583802252.py", line 36, in extract_zip_file
+    with zipfile.ZipFile(self.config.local_data_file, 'r') as zip_ref:
+  File "c:\Users\bayir\anaconda3\envs\kideny\lib\zipfile.py", line 1254, in __init__
+    self.fp = io.open(file, filemode)
+PermissionError: [Errno 13] Permission denied: 'artifacts/data_ingestion/data.zip'
+[2025-04-27 12:29:25,006: INFO: common: created directory at: artifacts]
+[2025-04-27 12:29:25,009: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-04-27 12:29:25,011: INFO: 3900917980: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-04-27 12:29:25,505: INFO: 3900917980: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-04-27 12:29:25,506: ERROR: 2628198839: Error occurred during data ingestion process.]
+Traceback (most recent call last):
+  File "C:\Users\bayir\AppData\Local\Temp\ipykernel_34728\2628198839.py", line 6, in <module>
+    data_ingestion.extract_zip_file()
+AttributeError: 'DataIngestion' object has no attribute 'extract_zip_file'
+[2025-04-27 12:30:35,431: INFO: common: created directory at: artifacts]
+[2025-04-27 12:30:35,433: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-04-27 12:30:35,434: INFO: 3882145863: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-04-27 12:30:35,435: ERROR: 2628198839: Error occurred during data ingestion process.]
+Traceback (most recent call last):
+  File "C:\Users\bayir\AppData\Local\Temp\ipykernel_34728\2628198839.py", line 5, in <module>
+    data_ingestion.download_file()
+  File "C:\Users\bayir\AppData\Local\Temp\ipykernel_34728\3882145863.py", line 24, in download_file
+    raise e
+  File "C:\Users\bayir\AppData\Local\Temp\ipykernel_34728\3882145863.py", line 19, in download_file
+    gdown.download(prefix+file_id,zip_download_dir, unzip=True)
+TypeError: download() got an unexpected keyword argument 'unzip'
+[2025-04-27 12:40:31,647: INFO: common: created directory at: artifacts]
+[2025-04-27 12:40:31,650: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-04-27 12:40:31,654: INFO: 4127434936: Downloading dataset https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-04-27 12:40:31,656: ERROR: 2873309331: Error occurred during data ingestion process.]
+Traceback (most recent call last):
+  File "C:\Users\bayir\AppData\Local\Temp\ipykernel_34728\2873309331.py", line 6, in <module>
+    data_ingestion.download_file()
+  File "C:\Users\bayir\AppData\Local\Temp\ipykernel_34728\4127434936.py", line 28, in download_file
+    raise e
+  File "C:\Users\bayir\AppData\Local\Temp\ipykernel_34728\4127434936.py", line 19, in download_file
+    kaggle.api.dataset_download_files(
+  File "c:\Users\bayir\anaconda3\envs\kideny\lib\site-packages\kaggle\api\kaggle_api_extended.py", line 1490, in dataset_download_files
+    owner_slug, dataset_slug, dataset_version_number = self.split_dataset_string(
+  File "c:\Users\bayir\anaconda3\envs\kideny\lib\site-packages\kaggle\api\kaggle_api_extended.py", line 4163, in split_dataset_string
+    self.validate_dataset_string(dataset)
+  File "c:\Users\bayir\anaconda3\envs\kideny\lib\site-packages\kaggle\api\kaggle_api_extended.py", line 4153, in validate_dataset_string
+    raise ValueError('Invalid dataset specification ' + dataset)
+ValueError: Invalid dataset specification https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing
+[2025-04-27 12:42:13,671: INFO: common: created directory at: artifacts]
+[2025-04-27 12:42:13,673: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-04-27 12:42:13,675: INFO: 3285651542: Downloading dataset https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-04-27 12:46:05,404: INFO: common: created directory at: artifacts]
+[2025-04-27 12:46:05,407: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-04-27 12:46:05,410: INFO: 2867841043: Downloading dataset https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into artifacts/data_ingestion]
+[2025-04-27 12:46:05,412: ERROR: 2867841043: Failed to download or unzip dataset from Kaggle.]
+Traceback (most recent call last):
+  File "C:\Users\bayir\AppData\Local\Temp\ipykernel_34728\2867841043.py", line 20, in download_file
+    kaggle.api.dataset_download_files(
+  File "c:\Users\bayir\anaconda3\envs\kideny\lib\site-packages\kaggle\api\kaggle_api_extended.py", line 1490, in dataset_download_files
+    owner_slug, dataset_slug, dataset_version_number = self.split_dataset_string(
+  File "c:\Users\bayir\anaconda3\envs\kideny\lib\site-packages\kaggle\api\kaggle_api_extended.py", line 4163, in split_dataset_string
+    self.validate_dataset_string(dataset)
+  File "c:\Users\bayir\anaconda3\envs\kideny\lib\site-packages\kaggle\api\kaggle_api_extended.py", line 4153, in validate_dataset_string
+    raise ValueError('Invalid dataset specification ' + dataset)
+ValueError: Invalid dataset specification https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing
+[2025-04-27 12:46:05,415: ERROR: 3420174115: Error occurred during data ingestion process.]
+Traceback (most recent call last):
+  File "C:\Users\bayir\AppData\Local\Temp\ipykernel_34728\3420174115.py", line 6, in <module>
+    data_ingestion.download_file()
+  File "C:\Users\bayir\AppData\Local\Temp\ipykernel_34728\2867841043.py", line 30, in download_file
+    raise e
+  File "C:\Users\bayir\AppData\Local\Temp\ipykernel_34728\2867841043.py", line 20, in download_file
+    kaggle.api.dataset_download_files(
+  File "c:\Users\bayir\anaconda3\envs\kideny\lib\site-packages\kaggle\api\kaggle_api_extended.py", line 1490, in dataset_download_files
+    owner_slug, dataset_slug, dataset_version_number = self.split_dataset_string(
+  File "c:\Users\bayir\anaconda3\envs\kideny\lib\site-packages\kaggle\api\kaggle_api_extended.py", line 4163, in split_dataset_string
+    self.validate_dataset_string(dataset)
+  File "c:\Users\bayir\anaconda3\envs\kideny\lib\site-packages\kaggle\api\kaggle_api_extended.py", line 4153, in validate_dataset_string
+    raise ValueError('Invalid dataset specification ' + dataset)
+ValueError: Invalid dataset specification https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing
+[2025-04-27 12:46:41,373: INFO: common: created directory at: artifacts]
+[2025-04-27 12:46:41,376: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-04-27 12:46:41,379: INFO: 2867841043: Downloading dataset https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into artifacts/data_ingestion]
+[2025-04-27 12:46:41,380: ERROR: 2867841043: Failed to download or unzip dataset from Kaggle.]
+Traceback (most recent call last):
+  File "C:\Users\bayir\AppData\Local\Temp\ipykernel_34728\2867841043.py", line 20, in download_file
+    kaggle.api.dataset_download_files(
+  File "c:\Users\bayir\anaconda3\envs\kideny\lib\site-packages\kaggle\api\kaggle_api_extended.py", line 1490, in dataset_download_files
+    owner_slug, dataset_slug, dataset_version_number = self.split_dataset_string(
+  File "c:\Users\bayir\anaconda3\envs\kideny\lib\site-packages\kaggle\api\kaggle_api_extended.py", line 4163, in split_dataset_string
+    self.validate_dataset_string(dataset)
+  File "c:\Users\bayir\anaconda3\envs\kideny\lib\site-packages\kaggle\api\kaggle_api_extended.py", line 4153, in validate_dataset_string
+    raise ValueError('Invalid dataset specification ' + dataset)
+ValueError: Invalid dataset specification https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing
+[2025-04-27 12:46:41,382: ERROR: 1018615501: Error occurred during data ingestion process.]
+Traceback (most recent call last):
+  File "C:\Users\bayir\AppData\Local\Temp\ipykernel_34728\1018615501.py", line 6, in <module>
+    data_ingestion.download_file()
+  File "C:\Users\bayir\AppData\Local\Temp\ipykernel_34728\2867841043.py", line 30, in download_file
+    raise e
+  File "C:\Users\bayir\AppData\Local\Temp\ipykernel_34728\2867841043.py", line 20, in download_file
+    kaggle.api.dataset_download_files(
+  File "c:\Users\bayir\anaconda3\envs\kideny\lib\site-packages\kaggle\api\kaggle_api_extended.py", line 1490, in dataset_download_files
+    owner_slug, dataset_slug, dataset_version_number = self.split_dataset_string(
+  File "c:\Users\bayir\anaconda3\envs\kideny\lib\site-packages\kaggle\api\kaggle_api_extended.py", line 4163, in split_dataset_string
+    self.validate_dataset_string(dataset)
+  File "c:\Users\bayir\anaconda3\envs\kideny\lib\site-packages\kaggle\api\kaggle_api_extended.py", line 4153, in validate_dataset_string
+    raise ValueError('Invalid dataset specification ' + dataset)
+ValueError: Invalid dataset specification https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing
+[2025-04-27 12:46:49,034: INFO: common: created directory at: artifacts]
+[2025-04-27 12:46:49,037: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-04-27 12:46:49,040: INFO: 2867841043: Downloading dataset https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into artifacts/data_ingestion]
+[2025-04-27 12:46:49,044: ERROR: 2867841043: Failed to download or unzip dataset from Kaggle.]
+Traceback (most recent call last):
+  File "C:\Users\bayir\AppData\Local\Temp\ipykernel_34728\2867841043.py", line 20, in download_file
+    kaggle.api.dataset_download_files(
+  File "c:\Users\bayir\anaconda3\envs\kideny\lib\site-packages\kaggle\api\kaggle_api_extended.py", line 1490, in dataset_download_files
+    owner_slug, dataset_slug, dataset_version_number = self.split_dataset_string(
+  File "c:\Users\bayir\anaconda3\envs\kideny\lib\site-packages\kaggle\api\kaggle_api_extended.py", line 4163, in split_dataset_string
+    self.validate_dataset_string(dataset)
+  File "c:\Users\bayir\anaconda3\envs\kideny\lib\site-packages\kaggle\api\kaggle_api_extended.py", line 4153, in validate_dataset_string
+    raise ValueError('Invalid dataset specification ' + dataset)
+ValueError: Invalid dataset specification https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing
+[2025-04-27 12:46:49,045: ERROR: 1018615501: Error occurred during data ingestion process.]
+Traceback (most recent call last):
+  File "C:\Users\bayir\AppData\Local\Temp\ipykernel_34728\1018615501.py", line 6, in <module>
+    data_ingestion.download_file()
+  File "C:\Users\bayir\AppData\Local\Temp\ipykernel_34728\2867841043.py", line 30, in download_file
+    raise e
+  File "C:\Users\bayir\AppData\Local\Temp\ipykernel_34728\2867841043.py", line 20, in download_file
+    kaggle.api.dataset_download_files(
+  File "c:\Users\bayir\anaconda3\envs\kideny\lib\site-packages\kaggle\api\kaggle_api_extended.py", line 1490, in dataset_download_files
+    owner_slug, dataset_slug, dataset_version_number = self.split_dataset_string(
+  File "c:\Users\bayir\anaconda3\envs\kideny\lib\site-packages\kaggle\api\kaggle_api_extended.py", line 4163, in split_dataset_string
+    self.validate_dataset_string(dataset)
+  File "c:\Users\bayir\anaconda3\envs\kideny\lib\site-packages\kaggle\api\kaggle_api_extended.py", line 4153, in validate_dataset_string
+    raise ValueError('Invalid dataset specification ' + dataset)
+ValueError: Invalid dataset specification https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing
+[2025-04-27 12:49:05,433: INFO: common: created directory at: artifacts]
+[2025-04-27 12:49:05,435: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-04-27 12:49:05,438: INFO: 3765667004: Downloading dataset https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-04-27 12:57:18,726: INFO: 3765667004: Downloaded dataset https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into artifacts/data_ingestion/data.zip]
+[2025-04-27 13:04:20,583: INFO: utils: NumExpr defaulting to 12 threads.]
+[2025-04-27 13:04:26,367: INFO: common: created directory at: artifacts]
+[2025-04-27 13:04:26,370: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-04-27 13:04:30,355: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-04-27 13:05:02,188: INFO: utils: NumExpr defaulting to 12 threads.]
+[2025-04-27 13:05:18,286: INFO: common: created directory at: artifacts]
+[2025-04-27 13:05:18,289: INFO: common: created directory at: artifacts\training]
+[2025-04-27 13:07:51,133: INFO: common: created directory at: artifacts]
+[2025-04-27 13:07:51,138: INFO: common: created directory at: artifacts\training]
+[2025-04-27 13:39:14,497: INFO: utils: NumExpr defaulting to 12 threads.]
+[2025-04-27 13:39:29,928: INFO: common: created directory at: artifacts]
+[2025-04-27 13:39:29,931: INFO: common: created directory at: artifacts\training]
+[2025-04-27 13:43:43,359: INFO: common: created directory at: artifacts]
+[2025-04-27 13:43:43,362: INFO: common: created directory at: artifacts\training]
+[2025-04-27 13:44:41,163: INFO: common: created directory at: artifacts]
+[2025-04-27 13:44:41,167: INFO: common: created directory at: artifacts\training]
+[2025-04-27 13:44:54,571: INFO: common: created directory at: artifacts]
+[2025-04-27 13:44:54,573: INFO: common: created directory at: artifacts\training]
+[2025-04-27 13:47:57,499: INFO: common: created directory at: artifacts]
+[2025-04-27 13:47:57,501: INFO: common: created directory at: artifacts\training]
+[2025-04-27 13:49:33,848: INFO: common: created directory at: artifacts]
+[2025-04-27 13:49:33,850: INFO: common: created directory at: artifacts\training]
+[2025-04-27 13:50:23,574: INFO: common: created directory at: artifacts]
+[2025-04-27 13:50:23,577: INFO: common: created directory at: artifacts\training]
+[2025-04-27 13:59:01,469: INFO: common: created directory at: artifacts]
+[2025-04-27 13:59:01,480: INFO: common: created directory at: artifacts\training]
+[2025-04-27 14:00:29,465: INFO: utils: NumExpr defaulting to 12 threads.]
+[2025-04-27 14:00:36,537: INFO: common: created directory at: artifacts]
+[2025-04-27 14:00:36,538: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-04-27 14:02:46,164: INFO: utils: NumExpr defaulting to 12 threads.]
+[2025-04-27 14:02:50,576: INFO: common: created directory at: artifacts]
+[2025-04-27 14:02:50,579: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-04-27 14:02:54,410: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-04-27 14:03:28,752: INFO: utils: NumExpr defaulting to 12 threads.]
+[2025-04-27 14:03:38,639: INFO: common: created directory at: artifacts]
+[2025-04-27 14:03:38,643: INFO: common: created directory at: artifacts\training]
