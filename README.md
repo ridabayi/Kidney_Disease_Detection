@@ -15,7 +15,7 @@ Kidney diseases are a significant global health problem, often leading to seriou
 
 ### Example of Kidney CT Scan Image:
 
-![Kidney CT Scan]([https://github.com/ridabayi/AI-Powered-Pipeline-for-Kidney-Disease-Diagnosis-MLflow-DVC/blob/main/Kidney_Disease.png])
+![Kidney CT Scan](https://github.com/ridabayi/AI-Powered-Pipeline-for-Kidney-Disease-Diagnosis-MLflow-DVC/blob/main/Kidney_Disease.png)
 *Example of a kidney CT scan image used for classification.*
 
 ### Deep Learning Pipeline Overview:
