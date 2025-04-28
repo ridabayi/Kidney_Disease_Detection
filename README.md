@@ -29,14 +29,13 @@ Kidney diseases are a significant global health problem, often leading to seriou
 
 ### 1️⃣ Clone the repository
 ```bash
-git clone https://github.com/krishnaik06/Kidney-Disease-Classification-Deep-Learning-Project
-cd Kidney-Disease-Classification-Deep-Learning-Project
+git clone https://github.com/ridabayi/AI-Powered-Pipeline-for-Kidney-Disease-Diagnosis-MLflow-DVC
 ```
 
 ### 2️⃣ Create and activate a conda environment
 ```bash
-conda create -n cnncls python=3.8 -y
-conda activate cnncls
+conda create -n env python=3.8 -y
+conda activate env
 ```
 
 ### 3️⃣ Install project dependencies
