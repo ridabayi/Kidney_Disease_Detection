@@ -1,9 +1,5 @@
 
 # Kidney Disease Detection 
-
-A CNN..
-
-
 ## 📊 Project Context
 
 Kidney diseases are a significant global health problem, often leading to serious complications if not detected early. This project leverages **Convolutional Neural Networks (CNN)** to automatically classify kidney-related conditions from **CT scan images**, assisting healthcare professionals in early diagnosis.
